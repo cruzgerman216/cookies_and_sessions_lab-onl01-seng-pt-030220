@@ -1,10 +1,10 @@
-<!-- <% if session[:cart] %>
+<% if session[:cart] %>
 <ul>
   <%= session[:cart].each do |product| %>
     <li><%= product %></li>
   <% end %>
 </ul>
-<%end%> -->
+<%end%>
 <%= form_tag ({controller: 'products',
     action: 'add',
     method: 'post'}) do %>
