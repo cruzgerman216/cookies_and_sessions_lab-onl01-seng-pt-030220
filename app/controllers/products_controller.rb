@@ -5,6 +5,7 @@ class ProductsController < ApplicationController
   end
 
   def add
+    puts "test"
     puts session[:product]
     cart << session[:product]
     render :index
